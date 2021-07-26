@@ -1,0 +1,153 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header{
+    background: url(../tlt/img/logo.svg) no-repeat;
+    height: 100px;
+}
+
+/* login container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 150px;
+}
+
+.loginText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #2c2c2c;
+}
+h2 {
+    font-size: 48px;
+    color: #2c2c2c;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+input {
+    width: 300px;
+    height: 38px;
+    left: 570px;
+    top: 324px;
+    background: #F6F8FB;
+    border-radius: 6px;
+    border: none;
+    margin: 15px 0;
+    color: #565868;
+    font-weight: 500;
+}
+
+input[type='text']::placeholder {
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+    color:#565868;
+    font-weight: 500;
+}
+
+input:not(:focus){
+    padding-left: 10px;
+    font-size: 15px;
+    color:#565868;
+    font-weight: 500;
+}
+
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+.lowerContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 15px;
+}
+
+
+.left {
+    display: flex;
+    flex-flow: column;
+    font-size: 13px;
+    color: black;
+}
+.right {
+    display: flex;
+}
+
+a:link, :hover, :visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+.button {
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    border: none;
+    color: rgba(254, 254, 254, 0.9);
+    text-align: center;
+    width: 96px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+    color: rgba(254, 254, 254, 0.9);
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+ 

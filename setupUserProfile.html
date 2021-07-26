@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLT Todo list Table: User profile setting up</title>
+    <link rel="stylesheet" href="userProfile.css">
+</head>
+<body>
+    <header>
+       <div class="containerLeft">
+            <div class="plus">+</div>
+            <div class="navMenu">
+                <ul>
+                    <li class="workspace">Workspace<img class="workspaceImg" src="./img/dd.svg" alt=""></li>
+                    <li>Discussions</li>
+                    <li>Users</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+       </div>
+       <div class="container">
+        <div class="navLogo">
+            <img src="./img/logo.svg" alt="" class="logo">
+        </div>
+       </div>
+       <div class="containerRight">
+        <div class="navUser">
+            <img src="./img/user.svg" alt="" id="userTypeImg">
+            <div class="userRight">
+                <h2 class="userTypeHeader">Admin</h2>
+                <h3 class="userNameHeader">John Doe</h3>
+            </div>
+            <img src="./img/dd.svg" alt="" class="imgUserType">
+        </div>
+       </div>
+    </header>
+    <div class="bodyContainer">
+        <div class="subBodyContainer">
+
+            <div class="profilePic">
+                <img class="userpic" src="img/userProfile.svg" alt="">
+            
+                <div class="nameAndDisplay">
+                    <div class="username">Username</div>
+                    <div class="nameType">Jane Doe, Member</div>
+                </div>
+            </div>
+
+            <form action="">
+
+                <div class="headTextPersonal">Personal Info</div>
+                <div class="input">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Phone number">
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="+ Add Field">
+                </div>
+                
+                <div class="headText">Account Info</div>
+                <div class="input">
+                    <input type="text" placeholder="Display name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="+ Add Field">
+                </div>
+                <div class="headText">+ Add section</div>
+
+                <hr>
+
+                <div class="adminSection">
+
+                    <div class="headTextAdmin">Admin Section</div>
+                    <div class="selectdiv">
+    
+                        <select class="custom-select" name='userType' id="userType">
+                            <option value="select">User Type</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Member">Member</option>
+                            <option value="Guest">Guest</option>
+                        </select>
+    
+                        </div>
+                    <div class="saveChange">
+                        <button>Save changes</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <footer></footer>
+</body>
+</html>

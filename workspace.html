@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLT Todo list Table: Workspace</title>
+<link rel="stylesheet" href="workspace.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="containerLeft">
+             <div class="plus">+</div>
+             <div class="navMenu">
+                 <ul>
+                     <li class="workspace">Workspace<img class="workspaceImg" src="./img/dd.svg" alt=""></li>
+                     <li>Discussions</li>
+                     <li>Users</li>
+                     <li>Support</li>
+                 </ul>
+             </div>
+        </div>
+        <div class="container">
+         <div class="navLogo">
+             <img src="./img/logo.svg" alt="" class="logo">
+         </div>
+        </div>
+        <div class="containerRight">
+         <div class="navUser">
+             <img src="./img/user.svg" alt="" id="userTypeImg">
+             <div class="userRight">
+                 <h2 class="userTypeHeader">Admin</h2>
+                 <h3 class="userNameHeader">John Doe</h3>
+             </div>
+             <img src="./img/dd.svg" alt="" class="imgUserType">
+         </div>
+        </div>
+     </header>
+        <!-- workspaceNameSection -->
+        <div class="workspaceNameSection">
+
+            <!-- name -->
+            <div class="workspaceName">
+                <h1>Sample Workspace</h1>
+                <div class="userImg">
+                    <img class="userImgInside" src="./img/userWorkspace1.svg" alt="">
+                    <img class="userImgInside" src="./img/userWorkspace2.svg" alt="">
+                    <img class="userImgInside" src="./img/userWorkspace3.svg" alt="">
+                </div>
+            </div>
+
+            <!-- bar -->
+            <div class="menuBar">
+                <button class="button">New Group</button>
+                <div>
+                    <button class="btnDiv"><i class="material-icons">search</i>Search</button>
+                </div>
+                <div>
+                    <button class="btnDiv"><i class="material-icons">account_circle</i>Person</button>
+                </div>
+                <div>
+                    <button class="btnDiv"><i class="material-icons">filter_alt</i>Filter</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- tableSection -->
+        <div class="tableSection">
+            <div class="tableContainer">
+                <div class="ulContainer">
+                   <div class="column">
+                       <div class="item">Group</div>
+                       <div class="item"><span></span><div class="itemName">New Item</div></div>
+                       <div class="item"><span></span><div class="itemName">New Item</div></div>
+                       <div class="item"><span></span><div class="itemName">Item1</div></div>
+                       <div class="item"><span></span><div class="itemName">Item2</div></div>
+                       <div class="item"><span></span><div class="itemName">Item3</div></div>
+                   </div>
+
+                   <div class="column">
+                    <div class="item">Person</div>
+                    <div class="item"><i class="material-icons" style="font-size: 28px; color: rgba(34, 34, 34, 0.8);">account_circle</i>
+                        <i class="material-icons" style="font-size: 28px; color: rgba(34, 34, 34, 0.8);">account_circle</i>
+                    </div>
+                    <div class="item"><i class="material-icons" style="font-size: 28px; color: rgba(34, 34, 34, 0.8);">account_circle</i></div>
+                    <div class="item"><i class="material-icons" style="font-size: 28px; color: rgba(34, 34, 34, 0.8);">account_circle</i></div>
+                    <div class="item"><i class="material-icons" style="font-size: 28px; color: rgba(34, 34, 34, 0.8);">account_circle</i></div>
+                    <div class="item"><i class="material-icons" style="font-size: 28px; color: rgba(34, 34, 34, 0.8);">account_circle</i></div>
+
+                </div>
+                
+                <div class="column">
+                    <div class="item">Status</div>
+                    <div class="item" style="background-color: #c4c4c4; color: white;">None</div>
+                    <div class="item" style="background-color: #e0445c; color: white;">Stuck</div>
+                    <div class="item" style="background-color: #fcac3e; color: white;">Working on it</div>
+                    <div class="item" style="background-color: #25c876; color: white;">Done</div>
+                    <div class="item" style="background-color: #429afa; color: white;">New request</div>
+                  
+                </div>
+                <div class="column">
+                    <div class="item">Date</div>
+                    <div class="item">Jul 30</div>
+                    <div class="item">Aug 25</div>
+                    <div class="item">Sep 10</div>
+                    <div class="item">Nov 5</div>
+                    <div class="item">Dec 1</div>
+                </div>
+                <div class="column">
+                    <div class="item">Text</div>
+                    <div class="item">Code camp</div>
+                    <div class="item">Software Park</div>
+                    <div class="item">Coding</div>
+                    <div class="item">JavaScript</div>
+                    <div class="item">Web application</div>
+                </div>
+                <div class="column">
+                    <div class="item">File</div>
+                    <div class="item"></div>
+                    <div class="item"><i class="material-icons" style="font-size: 18px; color: rgba(34, 34, 34, 0.8);">upload_file</i></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="column">
+                    <div class="item">Timeline</div>
+                    <div class="item"><div class="Timeline">Jul 20 - 25</div></div>
+                    <div class="item"><div class="Timeline">Aug 6 - 13</div></div>
+                    <div class="item"><div class="Timeline">Jul 3 - 5</div></div>
+                    <div class="item"><div class="Timeline">Nov 1 - 6</div></div>
+                    <div class="item"><div class="Timeline">Jan 12 - 29</div></div>
+                </div>
+                <div class="column">
+                    <div class="item">Dropdown</div>
+                    <div class="item"><div class="Dropdown">dropdown</div></div>
+                    <div class="item"><div class="Dropdown">label</div></div>
+                    <div class="item"><div class="Dropdown">menu</div></div>
+                    <div class="item"><div class="Dropdown">etc</div></div>
+                    <div class="item"><div class="Dropdown">task</div></div>
+                </div>
+                <div class="column">
+                    <div class="item"><i class="material-icons" style="font-size: 18px; color: rgba(34, 34, 34, 0.8);">add_circle_outline</i></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- collapse -->
+        <div class="collapseSection">
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">1</div>
+            </div>
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">2</div>
+            </div>
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">3</div>
+            </div>
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">4</div>
+            </div>
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">5</div>
+            </div>
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">6</div>
+            </div>
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">7</div>
+            </div>
+
+            <div class="collapse">
+                <div class="collapseName">Name</div>
+                <div class="collapseAmount">8</div>
+            </div>
+        </div> 
+    </body>
+</html>
